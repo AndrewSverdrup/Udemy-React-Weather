@@ -6,9 +6,12 @@ Nav = require 'Nav'
 Main = (props) ->
       div {},
          React.createElement(Nav,{},null)
-         h2 {},
-            'Main Component'
-         props.children
+         div
+            className: 'row'
+            div
+               className: 'columns medium-6 large-4 small-centered'
+               props.children
+
 
 # Main = React.createClass
 #    render: () ->
