@@ -10,9 +10,9 @@ React = require 'react'
 Examples = (props) ->
    div {},
       h3 {},
-         'Examples Component!'
+         'Examples'
       p {},
-         'Component info'
+         'Welcome to the Examples page!'
 
 
 module.exports = Examples
