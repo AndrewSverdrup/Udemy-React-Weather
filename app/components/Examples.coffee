@@ -9,6 +9,6 @@ React = require 'react'
 
 Examples = (props) ->
       h3 {},
-         'Examples Component'
+         'Examples Component!'
 
 module.exports = Examples
