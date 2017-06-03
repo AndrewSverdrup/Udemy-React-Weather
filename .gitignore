@@ -1,3 +1,4 @@
 .DS_STORE
 server.coffee
-app/
+app/api
+node_modules
