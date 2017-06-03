@@ -1,6 +1,6 @@
 React = require 'react'
 
-{h3} = React.DOM
+{h3, div} = React.DOM
 
 # About = React.createClass
 #    render: () ->
@@ -8,7 +8,10 @@ React = require 'react'
 #          'About Component'
 
 About = (props) ->
+   div {},
       h3 {},
-         'About Component'
+         'About'
+      p {},
+         'Welcome to the About page!'
 
 module.exports = About
