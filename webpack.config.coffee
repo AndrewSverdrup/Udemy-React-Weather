@@ -32,6 +32,7 @@ module.exports =
          About: component_path + 'About.coffee'
          Examples: component_path + 'Examples.coffee'
          openWeatherMap: 'app/api/openWeatherMap.coffee'
+         ErrorModal: component_path + 'ErrorModal.coffee'
       }
       extensions: [
          ''
