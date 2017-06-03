@@ -17,11 +17,13 @@ About = (props) ->
             li {},
                a
                   href: 'https://facebook.github.io/react'
+                  target: '_blank'
                   'React'
                '- This was the JavaScript framework used.'
             li {},
                a
                   href: 'http://openweathermap.org'
+                  target: '_blank'
                   'Open Weather Map'
                '- I used Open Weather Map to search for weather data by city name.'
 

@@ -17,7 +17,8 @@ WeatherForm = React.createClass
             type: 'text'
             placeholder:  'Enter city name'
             ref: 'location'
-         button {},
+         button
+            className: 'button expanded hollow'
             'Get Weather'
 
 module.exports = WeatherForm

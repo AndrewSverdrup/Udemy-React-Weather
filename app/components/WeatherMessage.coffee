@@ -3,7 +3,8 @@ React = require 'react'
 {h3} = React.DOM
 
 WeatherMessage = ({temp,location}) ->
-      h3 {},
+      h3
+         className: 'text-center'
          "It is #{temp}\xB0 in #{location}"
 
 # WeatherMessage = React.createClass

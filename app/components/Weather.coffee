@@ -4,7 +4,7 @@ WeatherForm = require 'WeatherForm'
 WeatherMessage = require 'WeatherMessage'
 openWeatherMap = require 'openWeatherMap'
 
-{h3, div} = React.DOM
+{h1, h3, div} = React.DOM
 
 Weather = React.createClass
    getInitialState: () ->
@@ -27,12 +27,14 @@ Weather = React.createClass
 
       renderMessage = () ->
          if isLoading
-            h3 {},
+            h3
+               className: 'text-center'
                'Fetching weather...'
          else if temp && location
             React.createElement(WeatherMessage, {location: location, temp: temp}, null)
       div {},
-         h3 {},
+         h1
+            className: 'text-center'
             'Get Weather'
          React.createElement(WeatherForm, {onSearch: @handleSearch}, null)
          renderMessage()
