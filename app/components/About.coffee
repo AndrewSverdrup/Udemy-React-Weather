@@ -1,6 +1,6 @@
 React = require 'react'
 
-{h3, div} = React.DOM
+{h3, div, p} = React.DOM
 
 # About = React.createClass
 #    render: () ->
