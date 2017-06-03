@@ -20,6 +20,11 @@
     "coffee-jsx-loader": "^0.1.5",
     "coffee-loader": "^0.7.3",
     "coffee-script": "^1.12.6",
+    "css-loader": "^0.23.1",
+    "foundation-sites": "^6.2.0",
+    "jquery": "^2.2.1",
+    "script-loader": "^0.6.1",
+    "style-loader": "^0.13.0",
     "webpack": "^1.12.13"
   }
 }

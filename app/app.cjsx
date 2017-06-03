@@ -5,8 +5,11 @@ ReactDOM = require 'react-dom'
 Main = require 'Main'
 Weather = require 'Weather'
 Examples = require 'Examples'
-Nav = require 'Nav'
 About = require 'About'
+
+# Load foundation
+require 'style!css!foundation-sites/dist/foundation.min.css'
+$(document).foundation();
 
 ReactDOM.render(
    <Router history={hashHistory}>

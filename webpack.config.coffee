@@ -1,7 +1,21 @@
 component_path = 'app/components/'
 
+webpack = require 'webpack'
+
 module.exports =
-   entry: './app/app.cjsx'
+   entry: [
+      'script!jquery/dist/jquery.min.js'
+      'script!foundation-sites/dist/foundation.min.js'
+      './app/app.cjsx'
+   ]
+   externals: {
+      jquery: 'jQuery'
+   }
+   plugins: [
+      new webpack.ProvidePlugin
+         '$': 'jquery'
+         'jQuery': 'jquery'
+   ]
    output:
       path: __dirname
       filename: './public/bundle.js'
