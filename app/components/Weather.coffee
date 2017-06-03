@@ -39,7 +39,7 @@ Weather = React.createClass
          React.createElement(ErrorModal,{message: errorMessage},null) if typeof errorMessage is 'string'
       div {},
          h1
-            className: 'text-center'
+            className: 'text-center page-title'
             'Get Weather'
          React.createElement(WeatherForm, {onSearch: @handleSearch}, null)
          renderMessage()

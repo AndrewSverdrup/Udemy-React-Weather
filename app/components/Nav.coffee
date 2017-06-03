@@ -32,7 +32,7 @@ Nav = React.createClass
                 li {},
                    input
                       type: 'search'
-                      placeholder: 'Search weather'
+                      placeholder: 'Search weather by city'
                 li {},
                    input
                       type: 'submit'

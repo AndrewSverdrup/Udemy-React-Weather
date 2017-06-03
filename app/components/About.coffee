@@ -5,7 +5,7 @@ React = require 'react'
 About = (props) ->
    div {},
       h1
-         className: 'text-center'
+         className: 'text-center page-title'
          'About'
 
       p {},

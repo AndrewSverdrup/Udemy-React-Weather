@@ -5,15 +5,15 @@ React = require 'react'
 Examples = (props) ->
    div {},
       h1
-         className: 'text-center'
+         className: 'text-center page-title'
          'Examples'
       p {},
          'Here are a few example locations to try out'
-         ol {},
-            li {},
-               React.createElement(Link,{to: '/?location=Phoenix'},'Phoenix, AX')
-            li {},
-               React.createElement(Link,{to: '/?location=Rio'},'Rio, Brazil')               
+      ol {},
+         li {},
+            React.createElement(Link,{to: '/?location=Phoenix'},'Phoenix, AX')
+         li {},
+            React.createElement(Link,{to: '/?location=Rio'},'Rio, Brazil')
 
 
 module.exports = Examples
