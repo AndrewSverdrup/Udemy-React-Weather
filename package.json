@@ -4,7 +4,8 @@
   "description": "Simple app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "coffee herokuserver.coffee"
   },
   "author": "Andrew",
   "license": "ISC",
