@@ -1,13 +1,29 @@
 React = require 'react'
 
-{h3, div, p} = React.DOM
+{h1, div, p, ul, li, a} = React.DOM
 
 About = (props) ->
    div {},
-      h3 {},
+      h1
+         className: 'text-center'
          'About'
+
       p {},
-         'Welcome to the About page!'
+         'This is a weather application built on React. I have built This
+         for The Complete React Web App Dev Course.'
+         p {},
+            'Here are some of the tools I used:'
+         ul {},
+            li {},
+               a
+                  href: 'https://facebook.github.io/react'
+                  'React'
+               '- This was the JavaScript framework used.'
+            li {},
+               a
+                  href: 'http://openweathermap.org'
+                  'Open Weather Map'
+               '- I used Open Weather Map to search for weather data by city name.'
 
 module.exports = About
 
