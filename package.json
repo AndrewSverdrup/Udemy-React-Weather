@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "npm run build && coffee herokuserver.coffee"
+    "build": "webpack -this would go b4 start(npm run build &&) ",
+    "start": "coffee herokuserver.coffee"
   },
   "author": "Andrew",
   "license": "ISC",
