@@ -9,12 +9,10 @@
   PORT = process.env.PORT || 3000;
 
   app.use(function(req, res, next) {
-    var localhost;
-    localhost = req.headers['host'].slice(0, 9);
-    if (req.headers['x-forwarded-proto'] === 'http' || req.headers['host'].slice(0, 9) === localhost) {
-      return next();
-    } else {
+    if (req.headers['x-forwarded-proto'] === 'https') {
       return res.redirect('http//' + req.hostname + req.url);
+    } else {
+      return next();
     }
   });
 
