@@ -5,7 +5,7 @@ React = require 'react'
 WeatherMessage = ({temp,location}) ->
       h3
          className: 'text-center'
-         "It is #{temp}\xB0 in #{location}"
+         "It is #{temp}\xB0F in #{location}."
 
 # WeatherMessage = React.createClass
 #    render: () ->

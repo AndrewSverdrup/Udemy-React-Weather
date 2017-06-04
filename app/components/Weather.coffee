@@ -14,6 +14,8 @@ Weather = React.createClass
       @setState
          isLoading: true
          errorMessage: undefined
+         location: undefined
+         temp: undefined
       openWeatherMap.getTemp(location).then(
          (temp) => # use '=>' instead of '->' so that the javascript 'this' refers to this component
             @setState
@@ -25,6 +27,16 @@ Weather = React.createClass
                isLoading: false
                errorMessage: e.message
       )
+   componentDidMount: () ->
+      location = @props.location.query.location
+      if location and location.length > 0
+         @handleSearch(location)
+         window.location.hash = '#/'
+   componentWillReceiveProps: (newProps) ->
+      location = newProps.location.query.location
+      if location and location.length > 0
+         @handleSearch(location)
+         window.location.hash = '#/'
    render: () ->
       {isLoading, temp, location, errorMessage} = @state
 

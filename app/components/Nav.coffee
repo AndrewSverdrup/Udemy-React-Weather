@@ -5,7 +5,11 @@ React = require 'react'
 Nav = React.createClass
    onSearch: (e) ->
       e.preventDefault()
-      alert 'Not yet wired up'
+      location = @refs.search.value
+      encodedLocation = encodeURIComponent location
+      if location.length > 0
+         this.refs.search.value = ''
+         window.location.hash = '#/?location=' + encodedLocation
    render: () ->
       div
          className: 'top-bar'
@@ -33,6 +37,7 @@ Nav = React.createClass
                    input
                       type: 'search'
                       placeholder: 'Search weather by city'
+                      ref: 'search'
                 li {},
                    input
                       type: 'submit'
