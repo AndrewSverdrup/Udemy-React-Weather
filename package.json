@@ -17,7 +17,9 @@
     "node-env-file": "^0.1.8",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
-    "react-router": "^2.0.0",
+    "react-router": "^2.0.0"
+  },
+  "devDependencies": {
     "coffee-jsx-loader": "^0.1.5",
     "coffee-loader": "^0.7.3",
     "coffee-script": "^1.12.6",
@@ -29,8 +31,5 @@
     "script-loader": "^0.6.1",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13"
-  },
-  "devDependencies": {
-
   }
 }
