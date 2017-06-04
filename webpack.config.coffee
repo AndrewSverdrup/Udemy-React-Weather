@@ -2,6 +2,13 @@ component_path = 'app/components/'
 
 webpack = require 'webpack'
 
+# Load env variables
+envFile = require 'node-env-file'
+process.env.NODE_ENV = process.env.NODE_ENV || 'development'
+envFile __dirname+'/development.env' if process.env.NODE_ENV  is 'development'
+# End load env variables
+###########################################
+
 module.exports =
    entry: [
       'script!jquery/dist/jquery.min.js'
@@ -15,6 +22,11 @@ module.exports =
       new webpack.ProvidePlugin
          '$': 'jquery'
          'jQuery': 'jquery'
+      # This plugin loads env variables
+      new webpack.DefinePlugin
+         'process.env':
+            NODE_ENV: JSON.stringify process.env.NODE_ENV
+            API_KEY: JSON.stringify process.env.API_KEY
    ]
    output:
       path: __dirname
@@ -48,3 +60,5 @@ module.exports =
          exclude: /(node_modules|bower_components)/
       ]
    devtool: 'cheap-module-eval-source-map'
+   node:
+    fs: 'empty'

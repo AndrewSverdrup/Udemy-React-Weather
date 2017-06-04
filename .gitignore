@@ -1,4 +1,4 @@
 .DS_STORE
 server.coffee
-#app/api
+*.env
 node_modules

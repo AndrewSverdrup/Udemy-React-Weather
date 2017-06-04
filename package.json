@@ -13,6 +13,7 @@
     "axios": "^0.16.1",
     "coffee-script": "^1.12.6",
     "express": "^4.15.3",
+    "node-env-file": "^0.1.8",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.0"
