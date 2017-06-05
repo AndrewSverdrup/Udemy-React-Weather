@@ -11,7 +11,7 @@ Examples = (props) ->
          'Here are a few example locations to try out'
       ol {},
          li {},
-            React.createElement(Link,{to: '/?location=Phoenix'},'Phoenix, AX')
+            React.createElement(Link,{to: '/?location=San+Francisco'},'San Francisco, CA')
          li {},
             React.createElement(Link,{to: '/?location=Rio'},'Rio, Brazil')
 
